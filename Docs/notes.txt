@@ -1,0 +1,74 @@
+shifter
+CREATE (sh:Shifters {Name: 'エレン', Last: 'イェーガー', Nationality: 'Paradis Island', OriginLocation: 'Shiganshina District', Gender: 'M', Age:25, RoyalBlood: False, Alive:False})
+RETURN sh;
+
+進撃の巨人
+
+エレン ・ イェーガー
+エレン ・ クルーガー
+グリシャ ・ イェーガー
+ユミル ・ フリッツ
+マリア ・ フリッツ
+ローゼ ・ フリッツ
+シーナ ・ フリッツ
+カール ・ フリッツ
+ウーリ ・ レイス
+フリーダ ・ レイス
+ユミル
+アニ ・ レオンハート
+ベルトルト ・ フーバー
+ライナー ・ ブラウン
+ポルコ ・ ガリアード
+マルセル ・ ガリアード
+ジーク ・ イェーガー
+ピーク ・ フィンガー
+アルミン ・ アルレルト
+トム ・ クサヴァー
+ラーラ ・ タイバー
+ファルコ ・ グライス
+
+
+Founding *
+Attack *
+Beast * 
+War Hammer *
+Cart *
+Jaw *
+Colossal
+Armor *
+Female *
+
+
+
+
+MATCH (sh:Shifters{Name: 'エレン', Last: 'イェーガー'}),(ti:Titans{Name: 'Attack'}) CREATE (sh)-[r:Transform]->(ti) RETURN r
+MATCH (mm :Shifters{Name: 'ユミル', Last: 'フリッツ'}),(ss:Shifters{Name: 'シーナ', Last: 'フリッツ'}) CREATE (ss)-[r:Familia]->(mm) RETURN r
+
+
+
+
+
+
+
+
+colab
+from langchain.chains import GraphCypherQAChain
+from langchain.graphs import Neo4jGraph
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
